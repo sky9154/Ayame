@@ -121,7 +121,7 @@ function rdpic(){
     })
 }
 
-http.createServer(server).listen(3000, ()=> console.log("百鬼"))
+http.createServer(server).listen(3000, "https://ayame-images.herokuapp.com/")
 
 function server (req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
