@@ -1,10 +1,10 @@
-const fs = require('fs')
-const http = require('http')
-const path = require('path')
-const port = process.env.PORT || 5000;
-const dir = './images'
+const fs = require("fs");    // fs module ，用來操作實體檔案，可以同步或非同步存取檔案系統操作
+const http = require("http");    // http module 提供了許多 function 以及 class 来搭建 HTTP 伺服器
+const path = require("path");    // path module 用來處理與轉換路徑的方法與屬性
+const port = process.env.PORT || 5000;     // 設定 Node.js 使用 heroku 的 port 或是 本地的 port 為 5000 
+const dir = "./images"    // 設置圖檔位置  
 
-function getStat(path){
+function getStat(path) {
     return new Promise((resolve, reject) => {
         fs.stat(path, (err, stats) => {
             if(err){
@@ -15,6 +15,7 @@ function getStat(path){
         })
     })
 }
+
 function mkdir(dir){
     return new Promise((resolve, reject) => {
         fs.mkdir(dir, err => {
