@@ -1,0 +1,20 @@
+{
+  "name": "ayame",
+  "version": "1.0.0",
+  "description": "百鬼圖片",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky0966548546/Ayame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sky0966548546/Ayame/issues"
+  },
+  "homepage": "https://github.com/sky0966548546/Ayame#readme"
+}
